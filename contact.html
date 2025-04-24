@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - The C0zy C0der - Jo Sesay</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="index.html">The C<span class="glow">0</span>zy C<span class="glow">0</span>der</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section class="contact-page">
+      <div class="grid-background"></div>
+      
+      <div class="page-header">
+        <div class="terminal-window full-width">
+          <div class="terminal-header">terminal@cozy-coder:~/contact</div>
+          <div class="terminal-content">
+            <p><span class="command">$ echo "Let's Connect!"</span></p>
+            <div class="typewriter">
+              <h2>Let's Connect!</h2>
+              <p>Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-form-container">
+          <div class="terminal-window">
+            <div class="terminal-header">terminal@cozy-coder:~/message</div>
+            <div class="terminal-content">
+              <p><span class="command">$ ./send_message.sh</span></p>
+              
+              <form class="contact-form" action="#" method="post" id="contactForm">
+                <div class="form-group">
+                  <label for="name"><span class="prompt">user@name:</span>~$</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="email"><span class="prompt">user@email:</span>~$</label>
+                  <input type="email" id="email" name="email" required placeholder="Your email">
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject"><span class="prompt">user@subject:</span>~$</label>
+                  <input type="text" id="subject" name="subject" required placeholder="Subject">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message"><span class="prompt">user@message:</span>~$</label>
+                  <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <div class="terminal-progress">
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                  <div class="progress-text">Message ready to send...</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+                
+                <div class="form-response" id="formResponse"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <div class="terminal-window">
+            <div class="terminal-header">terminal@cozy-coder:~/info</div>
+            <div class="terminal-content">
+              <p><span class="command">$ cat contact_info.txt</span></p>
+              
+              <div class="info-container">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="info-details">
+                    <h4>Email</h4>
+                    <p><a href="mailto:hello@cozy-coder.dev">hello@cozy-coder.dev</a></p>
+                  </div>
+                </div>
+                
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="info-details">
+                    <h4>Location</h4>
+                    <p>New York, NY</p>
+                  </div>
+                </div>
+                
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="info-details">
+                    <h4>Working Hours</h4>
+                    <p>Monday - Friday: 9am - 5pm EST</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="social-container">
+                <h4><span class="command">$ ls -la social/</span></h4>
+                <div class="social-links">
+                  <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-dev"></i>
+                    <span>Dev.to</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-faq">
+        <div class="terminal-window full-width">
+          <div class="terminal-header">terminal@cozy-coder:~/faq</div>
+          <div class="terminal-content">
+            <p><span class="command">$ grep -r "FAQ" --include="*.md" ./</span></p>
+            
+            <h3 class="section-subtitle">Frequently Asked Questions</h3>
+            
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span class="command">$</span> What services do you offer?
+                </div>
+                <div class="faq-answer">
+                  <p>I specialize in full-stack web development, AI/ML integration, data visualization, and technical writing. Whether you need a custom website, an AI-powered application, or clear documentation, I can help bring your ideas to life.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span class="command">$</span> How long does a typical project take?
+                </div>
+                <div class="faq-answer">
+                  <p>Project timelines vary based on complexity and scope. A simple website might take 2-4 weeks, while more complex applications with AI integration could take 2-3 months. I'll provide a detailed timeline during our initial consultation.</p>
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span class="command">$</span> Do you offer ongoing maintenance?
+                </div>
+                <div class="faq-answer">
+                  <p>Yes! I offer maintenance packages to keep your site running smoothly. These include regular updates, security patches, and technical support to ensure your digital presence remains up-to-date and secure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 Jo Sesay | The C0zy C0der</p>
+    </footer>
+  </div>
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      const formResponse = document.getElementById('formResponse');
+      const progressFill = document.querySelector('.progress-fill');
+      const progressText = document.querySelector('.progress-text');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          
+          progressText.textContent = "Sending message...";
+          
+          let progress = 0;
+          const interval = setInterval(function() {
+            progress += 5;
+            progressFill.style.width = progress + '%';
+            
+            if (progress >= 100) {
+              clearInterval(interval);
+              progressText.textContent = "Message sent successfully!";
+              formResponse.innerHTML = '<div class="success-message">Your message has been sent! I\'ll get back to you soon.</div>';
+              contactForm.reset();
+              
+             
+              setTimeout(function() {
+                progressFill.style.width = '0%';
+                progressText.textContent = "Message ready to send...";
+              }, 3000);
+            }
+          }, 100);
+        });
+      }
+   
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isActive = this.classList.contains('active');
+          
+         
+          faqQuestions.forEach(q => {
+            q.classList.remove('active');
+            q.nextElementSibling.style.maxHeight = null;
+          });
+          
+          
+          if (!isActive) {
+            this.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
