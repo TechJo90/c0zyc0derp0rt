@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#36454F"/>
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#4CAF50" stroke-width="0.5" opacity="0.2"/>
+  </pattern>
+  <rect width="400" height="400" fill="url(#grid)"/>
+  
+  <!-- Stylized Person -->
+  <circle cx="200" cy="140" r="80" fill="#0a0a0a"/>
+  <rect x="140" y="220" width="120" height="120" fill="#0a0a0a"/>
+  
+  <!-- Terminal Text Style Element -->
+  <text x="200" y="350" font-family="monospace" font-size="24" fill="#4CAF50" text-anchor="middle">Jo Sesay</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="170" cy="130" r="10" fill="#4CAF50"/>
+  <circle cx="230" cy="130" r="10" fill="#4CAF50"/>
+  <path d="M 170 180 Q 200 210 230 180" stroke="#4CAF50" stroke-width="5" fill="none"/>
+  
+  <!-- Tech Symbol -->
+  <text x="200" y="270" font-family="monospace" font-size="40" fill="#4CAF50" text-anchor="middle">&lt;/&gt;</text>
+</svg>
