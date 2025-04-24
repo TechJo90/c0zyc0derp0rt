@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#36454F"/>
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#4CAF50" stroke-width="0.5" opacity="0.2"/>
+  </pattern>
+  <rect width="400" height="200" fill="url(#grid)"/>
+
+  <!-- Weather App Elements -->
+  <rect x="50" y="30" width="300" height="140" rx="10" ry="10" fill="#0a0a0a" stroke="#4CAF50" stroke-width="2"/>
+  
+  <!-- Sun Icon -->
+  <circle cx="100" cy="80" r="25" fill="#f9d71c"/>
+  <circle cx="100" cy="80" r="32" fill="none" stroke="#f9d71c" stroke-width="2"/>
+  
+  <!-- Cloud Icon -->
+  <ellipse cx="250" cy="80" rx="40" ry="25" fill="#e6e6e6"/>
+  <ellipse cx="280" cy="70" rx="30" ry="20" fill="#e6e6e6"/>
+  <ellipse cx="230" cy="65" rx="25" ry="15" fill="#e6e6e6"/>
+  
+  <!-- Temperature Display -->
+  <text x="100" cy="140" font-family="monospace" font-size="24" fill="#4CAF50" text-anchor="middle">24°C</text>
+  <text x="250" cy="140" font-family="monospace" font-size="24" fill="#4CAF50" text-anchor="middle">16°C</text>
+  
+  <!-- Title -->
+  <text x="200" y="180" font-family="monospace" font-size="16" fill="#e6e6e6" text-anchor="middle">Weather App</text>
+</svg>

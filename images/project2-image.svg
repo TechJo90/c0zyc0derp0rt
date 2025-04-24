@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#36454F"/>
+  
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#4CAF50" stroke-width="0.5" opacity="0.2"/>
+  </pattern>
+  <rect width="400" height="200" fill="url(#grid)"/>
+
+  <!-- To-Do App UI -->
+  <rect x="50" y="30" width="300" height="140" rx="10" ry="10" fill="#0a0a0a" stroke="#4CAF50" stroke-width="2"/>
+  
+  <!-- App Title -->
+  <text x="200" y="55" font-family="monospace" font-size="16" fill="#4CAF50" text-anchor="middle">TO-DO LIST</text>
+  
+  <!-- Input Area -->
+  <rect x="70" y="65" width="260" height="25" rx="5" ry="5" fill="#36454F" stroke="#4CAF50" stroke-width="1"/>
+  <text x="80" y="83" font-family="monospace" font-size="12" fill="#888" text-anchor="start">Add new task...</text>
+  
+  <!-- Task Items -->
+  <rect x="70" y="100" width="260" height="25" rx="5" ry="5" fill="#36454F"/>
+  <rect x="75" y="105" width="15" height="15" rx="2" ry="2" fill="none" stroke="#4CAF50" stroke-width="2"/>
+  <text x="100" y="118" font-family="monospace" font-size="12" fill="#e6e6e6" text-anchor="start">Build portfolio website</text>
+  
+  <rect x="70" y="130" width="260" height="25" rx="5" ry="5" fill="#36454F"/>
+  <rect x="75" y="135" width="15" height="15" rx="2" ry="2" fill="none" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M 78 142 L 82 146 L 87 138" stroke="#4CAF50" stroke-width="2" fill="none"/>
+  <text x="100" y="148" font-family="monospace" font-size="12" fill="#e6e6e6" text-anchor="start" text-decoration="line-through" opacity="0.6">Learn React hooks</text>
+  
+  <!-- Title -->
+  <text x="200" y="180" font-family="monospace" font-size="16" fill="#e6e6e6" text-anchor="middle">To-Do List</text>
+</svg>
